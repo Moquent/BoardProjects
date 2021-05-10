@@ -7,7 +7,7 @@ public class Program2A {
 
     public static void main(String[] args) {
         accept();
-        calculateTotal();
+        calculate();
         printResult();
     }
 
@@ -17,7 +17,7 @@ public class Program2A {
         sc.close();
     }
 
-    public static void calculateTotal() {
+    public static void calculate() {
         for (int i = 0; i < num.length(); i++)
             total += Integer.parseInt(Character.toString(num.charAt(i)));
     }

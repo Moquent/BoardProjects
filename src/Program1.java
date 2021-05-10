@@ -9,7 +9,7 @@ public class Program1 {
     public static void main(String[] args) {
         accept();
         calculate();
-        print();
+        printResult();
     }
 
     private static void accept() {
@@ -43,7 +43,7 @@ public class Program1 {
         units = temp;
     }
 
-    private static void print() {
+    private static void printResult() {
         System.out.println("Name of the customer: " + n);
         System.out.println("Number of units consumed: " + units);
         System.out.println("Bill amount: " + totalCost);
