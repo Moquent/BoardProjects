@@ -1,10 +1,22 @@
 import java.util.Scanner;
 
 public class Program14 {
+    public static Scanner sc = new Scanner(System.in);
+    public static String str = sc.next();
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String str = sc.next();
+        accept();
+        calculateAndPrint();
+    }
+
+    public static void accept() {
+        System.out.print("Enter a word: ");
+        str = sc.next();
         sc.close();
+        System.out.println();
+    }
+
+    public static void calculateAndPrint() {
         if (str.charAt(0) != str.charAt(str.length() - 1))
             System.out.println("This is not a special word.");
         else {
