@@ -28,6 +28,7 @@ public class Program6 {
         percentages[pos2] = percentages[pos1];
         names[pos1] = tempName;
         percentages[pos1] = tempPercentage;
+        sc.close();
     }
 
     private static void sortStudents() {
