@@ -2,19 +2,22 @@ import java.util.Scanner;
 
 public class Program5 {
     public static String[] words = new String[40];
+    public static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter 40 words separated by a comma (Example: word1,word2,word3) : ");
-        String wordsLine = sc.nextLine();
-        sc.close();
-
-        words = wordsLine.split(",");
+        accept();
         selectionSort();
-
         System.out.println("Sorted: ");
         printArray(words);
     }
+
+    public static void accept() {
+        System.out.println("Enter 40 words separated by a comma (Example: word1,word2,word3) : ");
+        String wordsLine = sc.nextLine();
+        sc.close();
+        words = wordsLine.split(",");
+    }
+
 
     public static void selectionSort() {
         for (int i = words.length - 1; i > 0; i--) {
