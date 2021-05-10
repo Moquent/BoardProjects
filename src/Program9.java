@@ -4,7 +4,6 @@ public class Program9 {
     }
 
     public static void check(String str, char ch) {
-        System.out.println();
         int n = 0;
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == ch) {
@@ -15,7 +14,6 @@ public class Program9 {
     }
 
     public static void check(String s1) {
-        System.out.println();
         s1 = s1.toLowerCase();
         char[] vowels = {'a', 'e', 'i', 'o', 'u'};
         char[] letters = new char[5];
