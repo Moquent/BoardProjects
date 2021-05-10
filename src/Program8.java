@@ -8,13 +8,13 @@ public class Program8 {
             for (int j = 1; j <= i; j++) {
                 System.out.print(j + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
         for (int i = 6; i > 0; i--) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(j + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 
@@ -23,13 +23,13 @@ public class Program8 {
             for (int j = 1; j <= i; j++) {
                 System.out.print(j + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
         for (int i = 2; i < 8; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(j + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 
@@ -65,7 +65,7 @@ public class Program8 {
                 System.out.print((x) + " ");
                 x--;
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 }
