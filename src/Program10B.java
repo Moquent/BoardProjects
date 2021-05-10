@@ -1,18 +1,19 @@
 import java.util.Scanner;
 
 public class Program10B {
+    public static Scanner sc = new Scanner(System.in);
+    public static int n;
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        accept();
+        printResult();
+    }
+
+    public static void accept() {
         System.out.print("Enter a number: ");
-        int n = sc.nextInt();
+        n = sc.nextInt();
         sc.close();
-        System.out.println(" ");
-
-
-        if (isHappy(n))
-            System.out.println("This is a happy number.");
-        else
-            System.out.println("This is not a happy number.");
+        System.out.println();
     }
 
     public static boolean isHappy(int n) {
@@ -28,5 +29,12 @@ public class Program10B {
             n = sum;
         }
         return true;
+    }
+
+    public static void printResult() {
+        if (isHappy(n))
+            System.out.println("This is a happy number.");
+        else
+            System.out.println("This is not a happy number.");
     }
 }
