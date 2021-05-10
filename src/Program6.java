@@ -18,6 +18,7 @@ public class Program6 {
             names[i] = sc.nextLine();
             System.out.println("Enter percentage of " + names[i] + (i + 1));
             percentages[i] = Double.parseDouble(sc.nextLine());
+            sc.close();
         }
     }
 
