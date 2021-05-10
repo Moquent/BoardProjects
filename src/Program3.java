@@ -1,5 +1,17 @@
 import java.util.Scanner;
 
+class MovieMagic {
+    public static int year;
+    public static String title;
+    public static float rating;
+
+    public MovieMagic() {
+        year = 0;
+        title = "";
+        rating = 0;
+    }
+}
+
 class Program3 {
     public static Scanner sc = new Scanner(System.in);
 
@@ -37,17 +49,4 @@ class Program3 {
             System.out.println(movie.title + " was a super hit movie from the year " + movie.year + ".");
     }
 
-}
-
-class MovieMagic {
-    public static int year;
-    public static String title;
-    public static float rating;
-    public static Scanner sc = new Scanner(System.in);
-
-    public MovieMagic() {
-        year = 0;
-        title = "";
-        rating = 0;
-    }
 }
