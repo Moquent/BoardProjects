@@ -6,6 +6,11 @@ public class Program13 {
     public static int[][] p = new int[4][4];
 
     public static void main(String[] args) {
+        makeTable();
+        System.out.println(Arrays.deepToString(p));
+    }
+
+    public static void makeTable() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 p[i][j] = m[i][j] + n[i][j];
@@ -13,7 +18,5 @@ public class Program13 {
             }
             System.out.println();
         }
-
-        System.out.println(Arrays.deepToString(p));
     }
 }
