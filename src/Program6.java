@@ -24,7 +24,6 @@ public class Program6 {
     private static void swap(int pos1, int pos2) {
         String tempName = names[pos2];
         double tempPercentage = percentages[pos2];
-
         names[pos2] = names[pos1];
         percentages[pos2] = percentages[pos1];
         names[pos1] = tempName;
