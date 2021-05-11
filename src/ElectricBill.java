@@ -1,25 +1,25 @@
 import java.util.Scanner;
 
-public class ElectricBill {
+class ElectricBill {
     public static Scanner sc = new Scanner(System.in);
     public static String n;
     public static int units;
     public static double bill;
 
-    public static void main(String[] args) {
-        accept();
-        calculate();
-        printResult();
+    public ElectricBill() {
+        n = "";
+        units = 0;
+        bill = 0;
     }
 
-    private static void accept() {
+    public static void accept() {
         System.out.println("Enter the customers name: ");
         n = sc.nextLine();
         System.out.println("Enter the units consumed: ");
         units = sc.nextInt();
     }
 
-    private static void calculate() {
+    public static void calculate() {
         bill = 0;
         int temp = units;
         boolean above300 = units > 300;
@@ -43,9 +43,19 @@ public class ElectricBill {
         units = temp;
     }
 
-    private static void printResult() {
+    public static void print() {
         System.out.println("Name of the customer: " + n);
         System.out.println("Number of units consumed: " + units);
         System.out.println("Bill amount: " + bill);
+    }
+}
+
+public class Program1 {
+    public static void main(String[] args) {
+        ElectricBill EBill = new ElectricBill();
+
+        EBill.accept();
+        EBill.calculate();
+        EBill.print();
     }
 }
