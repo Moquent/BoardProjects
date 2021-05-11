@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Program2A {
     public static Scanner sc = new Scanner(System.in);
     public static String num;
-    public static int total = 0;
+    public static int total;
 
     public static void main(String[] args) {
         accept();
@@ -18,6 +18,7 @@ public class Program2A {
     }
 
     public static void calculate() {
+        total = 0;
         for (int i = 0; i < num.length(); i++)
             total += Integer.parseInt(Character.toString(num.charAt(i)));
     }
