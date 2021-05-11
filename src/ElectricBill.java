@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Program1 {
+public class ElectricBill {
     public static Scanner sc = new Scanner(System.in);
     public static String n;
     public static int units;
