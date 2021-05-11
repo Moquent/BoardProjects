@@ -12,6 +12,10 @@ class ElectricBill {
         bill = 0;
     }
 
+<<<<<<< HEAD:src/ElectricBill.java
+=======
+
+>>>>>>> bf6c4a8... made a class for the bill i forgot to make:src/Program1.java
     public static void accept() {
         System.out.println("Enter the customers name: ");
         n = sc.nextLine();
