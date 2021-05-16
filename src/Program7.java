@@ -8,6 +8,7 @@ public class Program7 {
     public static void main(String[] args) {
         System.out.println("Enter 3 lines with 3 numbers on each line.");
         accept();
+
         System.out.println("2D Array Structure: " + Arrays.deepToString(arr));
         System.out.println("Total Sum: " + calculateTotal(arr));
         System.out.println("Diagonal Sum: " + calculateDiagonal(arr));
