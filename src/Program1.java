@@ -20,27 +20,12 @@ class ElectricBill {
     }
 
     public static void calculate() {
-        bill = 0;
-        int temp = units;
-        boolean above300 = units > 300;
-
-        if (units > 100) {
-            bill += 100 * 2;
-            units -= 100;
-        } else if (units > 0 && units < 100) {
-            bill += units * 2;
-            units -= units % 100;
-        }
-        if (units > 200) {
-            bill += 200 * 3;
-            units -= 200;
-        } else if (units > 0 && units < 200) {
-            bill += units * 3;
-            units -= units % 200;
-        }
-        if (units > 0) bill += units * 5;
-        if (above300) bill += 2.5 / 100 * bill;
-        units = temp;
+        if (units <= 100)
+            bill = units * 2;
+        else if (units <= 300)
+            bill = 200 + (units - 100) * 3;
+        else
+            bill = (200 + 600 + (units - 300) * 5) + ((200 + 600 + (units - 300) * 5) / 100.0);
     }
 
     public static void print() {
