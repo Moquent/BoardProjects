@@ -12,6 +12,14 @@ class ElectricBill {
         bill = 0;
     }
 
+    public static void main(String[] args) {
+        ElectricBill EBill = new ElectricBill();
+
+        EBill.accept();
+        EBill.calculate();
+        EBill.print();
+    }
+
     public static void accept() {
         System.out.println("Enter the customers name: ");
         n = sc.nextLine();
@@ -32,15 +40,5 @@ class ElectricBill {
         System.out.println("Name of the customer: " + n);
         System.out.println("Number of units consumed: " + units);
         System.out.println("Bill amount: " + bill);
-    }
-}
-
-public class Program1 {
-    public static void main(String[] args) {
-        ElectricBill EBill = new ElectricBill();
-
-        EBill.accept();
-        EBill.calculate();
-        EBill.print();
     }
 }
