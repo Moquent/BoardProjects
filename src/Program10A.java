@@ -23,15 +23,17 @@ public class Program10A {
 
     public static void calculateLength() {
         int temp = n;
+
         while (temp != 0) {
-            length = length + 1;
-            temp = temp / 10;
+            length++;
+            temp /= 10;
         }
     }
 
     public static void calculateSum() {
         sum = 0;
         int temp = n;
+
         while (temp != 0) {
             int num = temp % 10;
             sum += Math.pow(num, length);

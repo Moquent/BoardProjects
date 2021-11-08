@@ -20,11 +20,13 @@ public class Program10B {
         while (n != 1) {
             int sum = 0;
             int temp = n;
+
             while (temp != 0) {
                 int num = temp % 10;
                 sum += num * num;
                 temp /= 10;
             }
+
             if (sum == 4) return false;
             n = sum;
         }

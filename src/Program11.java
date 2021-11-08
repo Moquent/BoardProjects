@@ -20,6 +20,7 @@ public class Program11 {
     public static boolean binarySearch(int[] array, int value, int first, int last) {
         if (last >= 0) {
             int mid = first + (last - first) / 2;
+
             if (array[mid] == value)
                 return true;
             else if (array[mid] > value)

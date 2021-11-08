@@ -7,6 +7,7 @@ public class Program5 {
     public static void main(String[] args) {
         accept();
         selectionSort();
+
         System.out.println("Sorted: ");
         printArray(words);
     }
@@ -17,7 +18,6 @@ public class Program5 {
         sc.close();
         words = wordsLine.split(",");
     }
-
 
     public static void selectionSort() {
         for (int i = words.length - 1; i > 0; i--) {

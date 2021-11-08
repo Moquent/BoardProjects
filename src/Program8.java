@@ -38,21 +38,22 @@ public class Program8 {
 
     public static void print3() {
         for (int i = 0; i < 6; i++) {
-            for (int j = 'A'; j < 'A' + (2 * 6) - 1; j++) {
-                if (j >= ('A' + 6 - 1) + i)
-                    System.out.print((char) (('A' + 6 - 1) - (j % ('A' + 6 - 1))));
-                else if (j <= ('A' + 6 - 1) - i)
+            for (int j = 'A'; j < 'J' + 2; j++) {
+                if (j >= ('A' + 5) + i)
+                    System.out.print((char) (('A' + 5) - (j % ('A' + 5))));
+                else if (j <= ('A' + 5) - i)
                     System.out.print((char) j);
                 else
                     System.out.print(" ");
             }
             System.out.println();
         }
+
         for (int i = 0; i < 6; i++) {
-            for (int j = 'A'; j < 'A' + (2 * 6) - 1; j++) {
-                if (j >= ('A' + 6 - 1) + i)
-                    System.out.print((char) (('A' + 6 - 1) - (j % ('A' + 6 - 1))));
-                else if (j <= ('A' + 6 - 1) - i)
+            for (int j = 'A'; j < 'J' + 2; j++) {
+                if (j >= ('A' + 5) + i)
+                    System.out.print((char) (('A' + 5) - (j % ('A' + 5))));
+                else if (j <= ('A' + 5) - i)
                     System.out.print((char) j);
                 else
                     System.out.print(" ");
