@@ -25,10 +25,13 @@ public class Program2 {
                 sc.close();
 
                 // calculate the harshad number
-                int total = harshadCalculate(num1);
+                int total = 0;
+                for (int i = 0; i < num1.length(); i++)
+                    total += Integer.parseInt(Character.toString(num1.charAt(i)));
 
-                // print results
-                harshadPrintResult(num1, total);
+                // print results of the calculation
+                if (Integer.parseInt(num1) % total == 0) System.out.println("This is a Harshad Number.");
+                else System.out.println("This is not a Harshad Number.");
 
                 // check for Perfect Number
             case 2:
@@ -39,44 +42,13 @@ public class Program2 {
                 sc.close();
 
                 // calculate the perfect number
-                int factorSum = perfectCalculate(num2);
+                int factorSum = 0;
+                for (int i = 1; i < num2 / 2; i++)
+                    if (num2 % i == 0) factorSum += i;
 
-                // print results
-                perfectPrintResult(num2, factorSum);
+                // print the final result
+                if (num2 % factorSum == 0) System.out.println("This is a perfect number.");
+                else System.out.println("This is not a perfect number.");
         }
-    }
-
-    public static int harshadCalculate(String num) {
-
-        // calculate and return the total
-        int total = 0;
-        for (int i = 0; i < num.length(); i++)
-            total += Integer.parseInt(Character.toString(num.charAt(i)));
-
-        return total;
-    }
-
-    public static void harshadPrintResult(String num, int total) {
-
-        // print results of the calculation
-        if (Integer.parseInt(num) % total == 0) System.out.println("This is a Harshad Number.");
-        else System.out.println("This is not a Harshad Number.");
-    }
-
-    public static int perfectCalculate(int num) {
-
-        // calculate and return the factor sum
-        int factorSum = 0;
-        for (int i = 1; i < num / 2; i++)
-            if (num % i == 0) factorSum += i;
-
-        return factorSum;
-    }
-
-    public static void perfectPrintResult(int num, int factorSum) {
-
-        // print the final result
-        if (num % factorSum == 0) System.out.println("This is a perfect number.");
-        else System.out.println("This is not a perfect number.");
     }
 }
